@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <ImageView
+        android:id="@+id/labelQuestionImageView"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/whosdatpokemon" />
+
+    <ImageView
+        android:id="@+id/spriteImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/labelQuestionImageView"
+        app:layout_constraintStart_toStartOf="@+id/labelQuestionImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sprite_charmander" />
+
+    <Button
+        android:id="@+id/answerOneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/answerTwoButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelQuestionImageView"
+        tools:text="Salamèche" />
+
+    <Button
+        android:id="@+id/answerTwoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/answerOneButton"
+        app:layout_constraintTop_toTopOf="@+id/answerOneButton"
+        tools:text="Caninos" />
+
+    <Button
+        android:id="@+id/answerThreeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="@+id/answerOneButton"
+        app:layout_constraintStart_toStartOf="@+id/answerOneButton"
+        app:layout_constraintTop_toBottomOf="@+id/answerOneButton"
+        tools:text="Ponyta" />
+
+    <Button
+        android:id="@+id/answerFourButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/answerTwoButton"
+        app:layout_constraintStart_toStartOf="@+id/answerTwoButton"
+        app:layout_constraintTop_toTopOf="@+id/answerThreeButton"
+        tools:text="Torche Humaine" />
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="Next question"
+        app:layout_constraintEnd_toEndOf="@+id/labelQuestionImageView"
+        app:layout_constraintStart_toStartOf="@+id/labelQuestionImageView"
+        app:layout_constraintTop_toBottomOf="@+id/labelQuestionImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

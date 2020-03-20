@@ -1,0 +1,204 @@
+﻿{
+  "easy": [
+    {
+      "id": "charmander",
+      "name": "Salamèche",
+      "possible_answers": [
+        "Salamèche",
+        "Caninos",
+        "Ponyta",
+        "Torche Humaine"
+      ]
+    },
+    {
+      "id": "squirtle",
+      "name": "Carapuce",
+      "possible_answers": [
+        "Carapuce",
+        "Ptitard",
+        "Kokiyas",
+        "Aquaman"
+      ]
+    },
+    {
+      "id": "bulbasaur",
+      "name": "Bulbizarre",
+      "possible_answers": [
+        "Bulbizarre",
+        "Ortide",
+        "Chetiflor",
+        "Groot"
+      ]
+    },
+    {
+      "id": "eevee",
+      "name": "Evoli",
+      "possible_answers": [
+        "Evoli",
+        "Métamorphe",
+        "Mew",
+        "Power Ranger blanc"
+      ]
+    },
+    {
+      "id": "pikachu",
+      "name": "Pikachu",
+      "possible_answers": [
+        "Pikachu",
+        "Pachirisu",
+        "Togedemaru",
+        "Claude François"
+      ]
+    },
+    {
+      "id": "ivysaur",
+      "name": "Herbizarre",
+      "possible_answers": [
+        "Herbizarre",
+        "Ortide",
+        "Boustiflor",
+        "John Cena"
+      ]
+    },
+    {
+      "id": "charizard",
+      "name": "Dracaufeu",
+      "possible_answers": [
+        "Dracaufeu",
+        "Dracolosse",
+        "Leviator",
+        "Maquiar à pointe"
+      ]
+    },
+    {
+      "id": "gengar",
+      "name": "Ectoplasma",
+      "possible_answers": [
+        "Ectoplasma",
+        "Grotadmorv",
+        "Melofée",
+        "Nick Quasi-Sans-Tête"
+      ]
+    },
+    {
+      "id": "mewtwo",
+      "name": "Mewtwo",
+      "possible_answers": [
+        "Mewtwo",
+        "Alakazam",
+        "Hypnomade",
+        "Panthère Rose"
+      ]
+    },
+    {
+      "id": "moltres",
+      "name": "Sulfura",
+      "possible_answers": [
+        "Sulfura",
+        "Electhor",
+        "Artikodin",
+        "Pépito"
+      ]
+    },
+    {
+      "id": "jigglypuff",
+      "name": "Rondoudou",
+      "possible_answers": [
+        "Rondoudou",
+        "Abra",
+        "Smogo",
+        "Birdo"
+      ]
+    },
+    {
+      "id": "staryu",
+      "name": "Stari",
+      "possible_answers": [
+        "Stari",
+        "Tetarte",
+        "Crustabri",
+        "Etoile de Noël"
+      ]
+    },
+    {
+      "id": "raichu",
+      "name": "Raichu",
+      "possible_answers": [
+        "Raichu",
+        "Elektek",
+        "Voltali",
+        "Sauce Creamy Deluxe"
+      ]
+    },
+    {
+      "id": "magnemite",
+      "name": "Magnéti",
+      "possible_answers": [
+        "Magnéti",
+        "Voltorbe",
+        "Rondoudou",
+        "Don Juan"
+      ]
+    },
+    {
+      "id": "magikarp",
+      "name": "Magicarpe",
+      "possible_answers": [
+        "Magicarpe",
+        "Hypotrempe",
+        "Poissyrène",
+        "The Rock"
+      ]
+    },
+    {
+      "id": "gyarados",
+      "name": "Léviator",
+      "possible_answers": [
+        "Léviator",
+        "Draco",
+        "Poissoroy",
+        "Léviaraison"
+      ]
+    },
+    {
+      "id": "mrmime",
+      "name": "M. Mime",
+      "possible_answers": [
+        "M. Mime",
+        "Porygon",
+        "Mew",
+        "Charlie Chaplin"
+      ]
+    },
+    {
+      "id": "meowth",
+      "name": "Miaouss",
+      "possible_answers": [
+        "Miaouss",
+        "Evoli",
+        "Pikachu",
+        "Picsou"
+      ]
+    },
+    {
+      "id": "lapras",
+      "name": "Lockhlass",
+      "possible_answers": [
+        "Lokhlass",
+        "Aquali",
+        "Amonistar",
+        "Tortue Géniale"
+      ]
+    },
+    {
+      "id": "arcanine",
+      "name": "Arcanin",
+      "possible_answers": [
+        "Arcanin",
+        "Galopa",
+        "Pyroli",
+        "Doggo"
+      ]
+    }
+  ]
+}
