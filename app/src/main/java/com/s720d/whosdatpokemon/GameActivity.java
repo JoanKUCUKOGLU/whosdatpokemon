@@ -2,13 +2,15 @@ package com.s720d.whosdatpokemon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.ColorFilter;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,6 +25,8 @@ import java.util.List;
 
 public class GameActivity extends AppCompatActivity {
 
+    private String difficulty;
+
     private ImageView spriteImage;
 
     private Button answer1Button;
@@ -35,11 +39,17 @@ public class GameActivity extends AppCompatActivity {
 
     private Button nextQuestionButton;
 
+    private ProgressBar questionProgressBar;
+
+    private TextView indexTextView;
+
     private int currentIndex = 0;
     private Question currentQuestion;
     private ColorFilter currentColorFilter;
 
     private int nbCorrectAnswers = 0;
+
+    private boolean isOver = false;
 
     private List<Question> listQuestions = new ArrayList<>();
 
@@ -48,6 +58,8 @@ public class GameActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
+        difficulty = getIntent().getStringExtra("difficulty");
+
         spriteImage = findViewById(R.id.spriteImageView);
         answer1Button = findViewById(R.id.answerOneButton);
         answer2Button = findViewById(R.id.answerTwoButton);
@@ -55,6 +67,10 @@ public class GameActivity extends AppCompatActivity {
         answer4Button = findViewById(R.id.answerFourButton);
         nextQuestionButton = findViewById(R.id.nextQuestionButton);
         nextQuestionButton.setVisibility(View.INVISIBLE);
+
+        questionProgressBar = findViewById(R.id.questionProgressBar);
+        questionProgressBar.setMax(10);
+        indexTextView = findViewById(R.id.indexTextView);
 
         // Get all Questions by difficulty received by HomeActivity (through RulesActivity)
         listQuestions = getListQuestions();
@@ -86,7 +102,24 @@ public class GameActivity extends AppCompatActivity {
         nextQuestionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                newQuestion();
+                if(!isOver) {
+                    newQuestion();
+                } else {
+                    Intent intent = new Intent(GameActivity.this, StatsActivity.class);
+                    intent.putExtra("score", nbCorrectAnswers);
+                    intent.putExtra("difficulty", difficulty);
+                    startActivity(intent);
+                }
+            }
+        });
+        spriteImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(spriteImage.getColorFilter() == null) {
+                    Intent intent = new Intent(GameActivity.this, DisplayImageActivity.class);
+                    intent.putExtra("image", getResources().getIdentifier("sprite_" + currentQuestion.getId(), "drawable", getPackageName()));
+                    startActivity(intent);
+                }
             }
         });
 
@@ -114,6 +147,9 @@ public class GameActivity extends AppCompatActivity {
         currentColorFilter = spriteImage.getColorFilter();
         spriteImage.setColorFilter(Color.parseColor("#000000"));
 
+        indexTextView.setText(currentIndex+1 + " / 10");
+        questionProgressBar.setProgress(currentIndex);
+
         Integer[] answerList = {0, 1, 2, 3};
         Collections.shuffle(Arrays.asList(answerList));
 
@@ -126,7 +162,7 @@ public class GameActivity extends AppCompatActivity {
 
     public void newResponse(Button currentButton) {
         changeButtonEnabled(false);
-        spriteImage.setColorFilter(currentColorFilter);
+        spriteImage.setColorFilter(null);
         if (currentButton.getText().equals(currentQuestion.getName())) {
             nbCorrectAnswers += 1;
         } else {
@@ -135,9 +171,13 @@ public class GameActivity extends AppCompatActivity {
 
         highlightGoodAnswer();
         currentIndex += 1;
-        if (currentIndex < 10) {
-            nextQuestionButton.setVisibility(View.VISIBLE);
+        if (currentIndex > 9) {
+            isOver = true;
+            nextQuestionButton.setText("THE END");
+            questionProgressBar.setProgress(currentIndex);
         }
+        nextQuestionButton.setVisibility(View.VISIBLE);
+
     }
 
     public void highlightGoodAnswer() {
@@ -165,7 +205,6 @@ public class GameActivity extends AppCompatActivity {
     public List<Question> getListQuestions() {
         List<Question> listQuestions = new ArrayList<>();
         JSONArray pokemonJson = new JSONArray();
-        String difficulty = getIntent().getStringExtra("difficulty");
 
         try {
             InputStream is = getResources().openRawResource(R.raw.pokemon_data);

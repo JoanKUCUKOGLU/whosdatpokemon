@@ -200,5 +200,207 @@
         "Doggo"
       ]
     }
+  ],
+  "medium": [
+    {
+      "id": "sandslash",
+      "name": "Sablaireau",
+      "possible_answers": [
+        "Sablaireau",
+        "Colossinge",
+        "Triopikeur",
+        "Bac à sable"
+      ]
+    },
+    {
+      "id": "clefairy",
+      "name": "Mélofée",
+      "possible_answers": [
+        "Mélofée",
+        "Pikachu",
+        "Evoli",
+        "Kirby"
+      ]
+    },
+    {
+      "id": "ninetales",
+      "name": "Feunard",
+      "possible_answers": [
+        "Feunard",
+        "Arcanin",
+        "Galopa",
+        "Kyubi"
+      ]
+    },
+    {
+      "id": "dugtrio",
+      "name": "Triopikeur",
+      "possible_answers": [
+        "Triopikeur",
+        "Gravalanche",
+        "Kabuto",
+        "Chasse Taupe"
+      ]
+    },
+    {
+      "id": "primeape",
+      "name": "Colossinge",
+      "possible_answers": [
+        "Colossinge",
+        "Rhinoferos",
+        "Dracolosse",
+        "Mike Tyson"
+      ]
+    },
+    {
+      "id": "alakazam",
+      "name": "Alakazam",
+      "possible_answers": [
+        "Alakazam",
+        "Mewtwo",
+        "Ortide",
+        "CuillèreMan"
+      ]
+    },
+    {
+      "id": "machamp",
+      "name": "Mackogneur",
+      "possible_answers": [
+        "Mackogneur",
+        "Kangourex",
+        "Kabutops",
+        "Ben 10"
+      ]
+    },
+    {
+      "id": "victreebel",
+      "name": "Empiflor",
+      "possible_answers": [
+        "Empiflor",
+        "Raflesia",
+        "Herbizarre",
+        "Aubergine"
+      ]
+    },
+    {
+      "id": "rapidash",
+      "name": "Galopa",
+      "possible_answers": [
+        "Galopa",
+        "Dodrio",
+        "Persian",
+        "LicorneBretonne"
+      ]
+    },
+    {
+      "id": "exeggutor",
+      "name": "Noadkoko",
+      "possible_answers": [
+        "Noadkoko",
+        "Rhinoferos",
+        "Empiflor",
+        "Arbre Mojo"
+      ]
+    },
+    {
+      "id": "weezing",
+      "name": "Smogogo",
+      "possible_answers": [
+        "Smogogo",
+        "Voltorbe",
+        "Abo",
+        "Covid-19"
+      ]
+    },
+    {
+      "id": "kangaskhan",
+      "name": "Kangourex",
+      "possible_answers": [
+        "Kangourex",
+        "Rhinoferos",
+        "Ossatueur",
+        "Super Nanny"
+      ]
+    },
+    {
+      "id": "magmar",
+      "name": "Magmar",
+      "possible_answers": [
+        "Magmar",
+        "Insecateur",
+        "Raichu",
+        "Poulet braisé"
+      ]
+    },
+    {
+      "id": "electabuzz",
+      "name": "Elektek",
+      "possible_answers": [
+        "Elektek",
+        "Grolem",
+        "Tygnon",
+        "Duracell"
+      ]
+    },
+    {
+      "id": "ditto",
+      "name": "Métamorph",
+      "possible_answers": [
+        "Métamorph",
+        "Mew",
+        "Tadmorv",
+        "Nymphadora"
+      ]
+    },
+    {
+      "id": "dratini",
+      "name": "Minidraco",
+      "possible_answers": [
+        "Minidraco",
+        "Abo",
+        "Chenipan",
+        "Jafar"
+      ]
+    },
+    {
+      "id": "kabutops",
+      "name": "Kabutops",
+      "possible_answers": [
+        "Kabutops",
+        "Insecateur",
+        "Kicklee",
+        "Cisaille"
+      ]
+    },
+    {
+      "id": "vaporeon",
+      "name": "Aquali",
+      "possible_answers": [
+        "Aquali",
+        "Pyroli",
+        "Voltali",
+        "Power Ranger noir"
+      ]
+    },
+    {
+      "id": "flareon",
+      "name": "Pyroli",
+      "possible_answers": [
+        "Pyroli",
+        "Aquali",
+        "Voltali",
+        "Power Ranger noir"
+      ]
+    },
+    {
+      "id": "jolteon",
+      "name": "Voltali",
+      "possible_answers": [
+        "Voltali",
+        "Aquali",
+        "Pyroli",
+        "Power Ranger noir"
+      ]
+    }
   ]
 }
