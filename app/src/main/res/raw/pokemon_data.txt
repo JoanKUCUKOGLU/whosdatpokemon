@@ -402,5 +402,187 @@
         "Power Ranger noir"
       ]
     }
+  ],
+  "hard": [
+    {
+      "id": "chrispratt",
+      "name": "Chris Pratt",
+      "possible_answers": [
+        "Chris Pratt",
+        "The Rock",
+        "John Cena",
+        "Passe-Partout"
+      ]
+    },
+    {
+      "id": "elmo",
+      "name": "Elmo",
+      "possible_answers": [
+        "Elmo",
+        "Marie",
+        "Thanos",
+        "Ronflex"
+      ]
+    },
+    {
+      "id": "franklin",
+      "name": "Franklin",
+      "possible_answers": [
+        "Franklin",
+        "Rick",
+        "Siphano",
+        "Pépito"
+      ]
+    },
+    {
+      "id": "goku",
+      "name": "Goku",
+      "possible_answers": [
+        "Goku",
+        "Ice Climbers",
+        "Snowboard",
+        "Oak Sapling"
+      ]
+    },
+    {
+      "id": "goose",
+      "name": "Goose",
+      "possible_answers": [
+        "Goose",
+        "Autruche",
+        "Godzilla",
+        "Milhouse VanHouten"
+      ]
+    },
+    {
+      "id": "knuckles",
+      "name": "Knuckle",
+      "possible_answers": [
+        "Knuckle",
+        "MasterChief",
+        "Snake",
+        "Superman"
+      ]
+    },
+    {
+      "id": "minecraftpig",
+      "name": "Minecraft Pig",
+      "possible_answers": [
+        "Minecraft Pig",
+        "Minecraft Cow",
+        "Minecraft Chicken",
+        "Cuillère"
+      ]
+    },
+    {
+      "id": "papa",
+      "name": "Papa",
+      "possible_answers": [
+        "Papa",
+        "Random",
+        "answer.txt",
+        "Terminator"
+      ]
+    },
+    {
+      "id": "rickastley",
+      "name": "Rick Astley",
+      "possible_answers": [
+        "Rick Astley",
+        "André",
+        "Romuald",
+        "Thomas"
+      ]
+    },
+    {
+      "id": "sans",
+      "name": "Sans",
+      "possible_answers": [
+        "Knuckle",
+        "Sans",
+        "Jack Wallside",
+        "HotWheels"
+      ]
+    },
+    {
+      "id": "spongebob",
+      "name": "Sponge Bob",
+      "possible_answers": [
+        "Sponge Bob",
+        "Bad Drawing",
+        "Catapulte",
+        "Sauce Creamy Deluxe"
+      ]
+    },
+    {
+      "id": "shrek",
+      "name": "Shrek",
+      "possible_answers": [
+        "Shrek",
+        "L'âne",
+        "Fiona",
+        "Kirby"
+      ]
+    },
+    {
+      "id": "spiderman",
+      "name": "Spiderman",
+      "possible_answers": [
+        "Spiderman",
+        "wtf",
+        "Poissyrène",
+        "The Rock"
+      ]
+    },
+    {
+      "id": "thanos",
+      "name": "tano",
+      "possible_answers": [
+        "Thanos",
+        "tano",
+        "ANOS",
+        "tanosE"
+      ]
+    },
+    {
+      "id": "therock",
+      "name": "The Rock",
+      "possible_answers": [
+        "The Rock",
+        "The Caillou",
+        "The Rocher",
+        "The Doooom"
+      ]
+    },
+    {
+      "id": "waluigi",
+      "name": "Waluigi",
+      "possible_answers": [
+        "Waluigi",
+        "in",
+        "Smash",
+        "Bros"
+      ]
+    },
+    {
+      "id": "yoshi",
+      "name": "Yoshi",
+      "possible_answers": [
+        "Yoshi",
+        "Yoshi",
+        "Yoshi",
+        "Yoshi"
+      ]
+    },
+    {
+      "id": "zemmour",
+      "name": "Eric Zemmour",
+      "possible_answers": [
+        "Eric Zemmour",
+        "Adolf Hitler",
+        "contrenatureuhh",
+        "Bisounours"
+      ]
+    }
   ]
 }

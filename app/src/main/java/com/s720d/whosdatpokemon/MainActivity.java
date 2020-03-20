@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         easyButton = findViewById(R.id.easyButton);
         mediumButton = findViewById(R.id.mediumButton);
         hardButton = findViewById(R.id.hardButton);
-        hardButton.setEnabled(false);
 
         aboutButton = findViewById(R.id.aboutButton);
         listButton = findViewById(R.id.listButton);
